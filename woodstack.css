@@ -181,7 +181,7 @@ h1{
 }
 @media(max-width:1000px){
   .main a::before{
-    content:"/A";
+    content:"\A";
     white-space:pre;
   }
   h2{
