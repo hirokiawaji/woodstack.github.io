@@ -180,6 +180,10 @@ h1{
   font-size:20px;
 }
 @media(max-width:1000px){
+  .main a::before{
+    content:"/A";
+    white-space:pre;
+  }
   h2{
     font-size:24px
   }
