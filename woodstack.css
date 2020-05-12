@@ -8,6 +8,7 @@
   display:inline-block;
   margin:10px;
   font-family:courier;
+  font-size:20px;
 }
 .header-list {
   display:inline-block;
@@ -177,7 +178,7 @@ h1{
   margin-left: 30px;
   font-family:serif;
   font-weight:bold;
-  font-size:20px;
+  font-size:30px;
 }
 @media(max-width:1000px){
   .main a::before{
