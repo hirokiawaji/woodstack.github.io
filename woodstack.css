@@ -7,8 +7,9 @@
 .header-list li{
   display:inline-block;
   margin:10px;
-  font-family:courier;
-  font-size:20px;
+  font-family:serif;
+  font-size:24px;
+  font-weight:lighter;
 }
 .header-list {
   display:inline-block;
@@ -17,123 +18,33 @@
 .icon{
   display:inline-block;
   font-family:serif;
-  margin-left:30px;
   font-weight:bold;
+  margin-left:30px;
+  font-size: 48px;
 }
 .header{
   height:50px;
 }
+.main{
+  margin-top:50px;
+}
 .main li{
-  width:100%;
+  margin:0 auto;
+  width:60%;
   list-style: none;
-  font-family:serif;
-  font-size:24px;
-  margin-top:30px;
-
 }
-.main a{
-  text-decoration: none;
-  color:black;
-  font-weight:bold;
-}
-.mgr1{
-  margin-right:30px;
-}
-.mgr2{
-  margin-right:100px;
+.footer{
+  border-top:solid 1px;
+  margin-bottom:100px;
 }
 .footer ul{
   margin-top:0px;
 }
-h2{
-  text-align:center;
-  font-family:serif;
-  font-size:36px;
-  font-weight:normal;
-
-}
-h2{
-  position: relative;
-  padding: 0.3em;
-}
-.title_wood h2:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 7px;
-  background: repeating-linear-gradient(-45deg, #F5A500, #F5A500 2px, white 2px, white 4px);
-}
-.title_concrete h2:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 7px;
-  background: repeating-linear-gradient(-45deg, #20508D, #20508D 2px, white 2px, white 4px);
-}
-.title_stone h2:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 7px;
-  background: repeating-linear-gradient(-45deg, #B82B1F, #B82B1F 2px, white 2px, white 4px);
-}
-.title_metal h2:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 7px;
-  background: repeating-linear-gradient(-45deg, #439367, #439367 2px, white 2px, white 4px);
-}
-.title_soil h2:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 7px;
-  background: repeating-linear-gradient(-45deg, #A86A34, #A86A34 2px, white 2px, white 4px);
-}
-.title_plastic h2:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 7px;
-  background: repeating-linear-gradient(-45deg, #BFC800, #BFC800 2px, white 2px, white 4px);
-}
-.title_other h2:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 7px;
-  background: repeating-linear-gradient(-45deg, #898989, #898989 2px, white 2px, white 4px);
-}
-h3{
-  text-align:center;
-  font-family:serif;
-  font-size:24px;
-  font-weight:normal
-}
-.title{
-  margin:50px auto 0 auto;
-}
-
-.policy{
+.home{
   text-decoration: none;
   color:black;
 }
-.works{
+.policy{
   text-decoration: none;
   color:black;
 }
@@ -149,14 +60,18 @@ h3{
   text-decoration: none;
   color:black;
 }
-.home{
+.tools{
   text-decoration: none;
   color:black;
 }
-.policy:hover{
+.works{
+  text-decoration: none;
+  color:black;
+}
+.home:hover{
   color:gray;
 }
-.works:hover{
+.policy:hover{
   color:gray;
 }
 .contact:hover{
@@ -168,39 +83,64 @@ h3{
 .notes:hover{
   color:gray;
 }
-.home:hover{
+.tools:hover{
   color:gray;
 }
-.footer{
-  margin-top:100px;
+.work{
+  color:gray;
+}
+.main a:hover{
+  color:gray;
+}
+.main a{
+  color:black;
+  text-decoration: none;
+  font-weight:bold;
+  font-family:serif;
 }
 h1{
   margin-left: 30px;
   font-family:serif;
   font-weight:bold;
+  font-size:20px;
+}
+.main ul{
+  padding-top:50px;
+  padding-bottom:50px;
+
+}
+
+.title{
+  font-family:serif;
   font-size:30px;
 }
+.main p{
+  font-family:serif;
+}
 @media(max-width:1000px){
-  .main a::before{
-    content:"\A";
-    white-space:pre;
-  }
-  .mgr1{
-    line-height:72px;
-  }
-  h2{
-    font-size:24px
-  }
-  }
-  h3{
-    font-size:14px
-  }
   .header-list{
     display:block;
     margin:0 auto;
     text-align:left;
   }
   .header{
-    height:90px;
+    height:200px;
+  }
+  .header-list li{
+    font-size:36px;
+  }
+}
+@media(max-width:1000px){
+  .main li{
+    width:80%;
+  }
+}
+@media(max-width:750px){
+  .main li{
+    width:100%;
+  }
+  .title{
+    font-family:serif;
+    font-size:42px;
   }
 }
